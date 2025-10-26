@@ -1,70 +1,130 @@
-# React.js and Tailwind CSS Assignment
+# My React App
 
-This assignment focuses on building a responsive React application using JSX and Tailwind CSS, implementing component architecture, state management, hooks, and API integration.
+A modern React application built with Vite, featuring reusable components, API integration, theme switching, and responsive design.
 
-## Assignment Overview
+## Features
 
-You will:
-1. Set up a React project with Vite and Tailwind CSS
-2. Create reusable UI components
-3. Implement state management using React hooks
-4. Integrate with external APIs
-5. Style your application using Tailwind CSS
-
-## Getting Started
-
-1. Accept the GitHub Classroom assignment invitation
-2. Clone your personal repository that was created by GitHub Classroom
-3. Install dependencies:
-   ```
-   npm install
-   ```
-4. Start the development server:
-   ```
-   npm run dev
-   ```
-
-## Files Included
-
-- `Week3-Assignment.md`: Detailed assignment instructions
-- Starter files for your React application:
-  - Basic project structure
-  - Pre-configured Tailwind CSS
-  - Sample component templates
-
-## Requirements
-
-- Node.js (v18 or higher)
-- npm or yarn
-- Modern web browser
-- Code editor (VS Code recommended)
+- 🎨 Theme switching (light/dark mode)
+- 📱 Responsive design
+- 🔄 API data integration with JSONPlaceholder
+- 📝 Task management functionality
+- 💾 Local storage persistence
+- 🎯 Custom hooks
+- 🎨 Tailwind CSS styling
 
 ## Project Structure
 
 ```
 src/
-├── components/       # Reusable UI components
-├── pages/           # Page components
-├── hooks/           # Custom React hooks
-├── context/         # React context providers
-├── api/             # API integration functions
-├── utils/           # Utility functions
-└── App.jsx          # Main application component
+├── components/         # Reusable UI components
+│   ├── ApiData.jsx    # API data fetching and display
+│   ├── Button.jsx     # Reusable button component
+│   ├── Card.jsx      # Card component for content display
+│   ├── Footer.jsx    # Application footer
+│   ├── Layout.jsx    # Main layout wrapper
+│   ├── Navbar.jsx    # Navigation component
+│   └── TaskManager.jsx # Task management functionality
+├── context/
+│   └── ThemeContext.jsx # Theme context provider
+├── hooks/
+│   └── useLocalStorage.js # Custom hook for local storage
+├── App.jsx           # Main application component
+└── main.jsx         # Application entry point
 ```
 
-## Submission
+## Prerequisites
 
-Your work will be automatically submitted when you push to your GitHub Classroom repository. Make sure to:
+Before you begin, ensure you have installed:
+- [Node.js](https://nodejs.org/) (v18 or higher recommended)
+- npm (comes with Node.js) or [pnpm](https://pnpm.io/)
 
-1. Complete all required components and features
-2. Implement proper state management with hooks
-3. Integrate with at least one external API
-4. Style your application with Tailwind CSS
-5. Deploy your application and add the URL to your README.md
+## Installation
 
-## Resources
+1. Clone the repository:
+```bash
+git clone <repository-url>
+cd my-react-app
+```
 
-- [React Documentation](https://react.dev/)
-- [Tailwind CSS Documentation](https://tailwindcss.com/docs)
-- [Vite Documentation](https://vitejs.dev/guide/)
-- [React Router Documentation](https://reactrouter.com/) 
+2. Install dependencies:
+```bash
+npm install
+# or if using pnpm
+pnpm install
+```
+
+## Available Scripts
+
+In the project directory, you can run:
+
+### Development Server
+```bash
+npm run dev
+# or
+pnpm dev
+```
+This starts the development server at `http://localhost:5173`
+
+### Build for Production
+```bash
+npm run build
+# or
+pnpm build
+```
+This creates an optimized production build in the `dist` folder.
+
+### Preview Production Build
+```bash
+npm run preview
+# or
+pnpm preview
+```
+This serves the production build locally for testing.
+
+### Lint Code
+```bash
+npm run lint
+# or
+pnpm lint
+```
+This runs ESLint to check for code quality issues.
+
+## Dependencies
+
+### Core Dependencies
+- React v19.1.1
+- React DOM v19.1.1
+- Tailwind CSS
+- prop-types v15.8.1
+
+### Development Dependencies
+- Vite v7.1.7
+- ESLint v9.36.0
+- Various ESLint plugins for React
+
+## Browser Support
+
+This application supports all modern browsers:
+- Chrome (latest)
+- Firefox (latest)
+- Safari (latest)
+- Edge (latest)
+
+## Contributing
+
+1. Fork the repository
+2. Create a new branch (`git checkout -b feature/improvement`)
+3. Make your changes
+4. Commit your changes (`git commit -am 'Add new feature'`)
+5. Push to the branch (`git push origin feature/improvement`)
+6. Create a Pull Request
+
+## License
+
+This project is licensed under the MIT License - see the LICENSE file for details.
+
+## Acknowledgments
+
+- Built with [Vite](https://vitejs.dev/)
+- Styled with [Tailwind CSS](https://tailwindcss.com/)
+- API data from [JSONPlaceholder](https://jsonplaceholder.typicode.com/)
